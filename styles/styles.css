@@ -883,7 +883,7 @@ button:disabled {
   padding-left: 0;
 }
 
-/* Quando a largura da tela for menor ou igual a 768px, as seguintes alterações de estilo serão aplicadas: */
+
 @media screen and (max-width: 768px) {
   /* Estilos para o cabeçalho (header) */
   header {
@@ -900,6 +900,7 @@ button:disabled {
   }
 
   .header-content {
+    margin-top: 2rem;
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
     /* padding-left: 6rem; */
@@ -909,18 +910,16 @@ button:disabled {
     display: none;
   }
 
-  .header-content .left-header .image{
-    height: 100%;
-    width: 100%;
-    margin-left: 4.4rem;
-    margin-top: 1rem;
-    margin-bottom: -1.6rem;
+  .header-content .left-header .image {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 60%;
   }
 
-  .header-content .left-header .image img{
+  .header-content .left-header .image img {
     max-width: 100%;
-    width: 250px;
-    height: 250px;
+    height: auto;
     object-fit: cover;
     filter: grayscale(60%);
   }
