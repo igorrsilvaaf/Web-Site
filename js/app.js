@@ -21,7 +21,7 @@
     });
 })();
 
-<!-- Funçao do botao Enviar ... -->
+// Funçao do botao Enviar
 class FormSubmit {
     constructor(settings) {
         this.settings = settings;
@@ -33,12 +33,12 @@ class FormSubmit {
         this.sendForm = this.sendForm.bind(this);
     }
 
-    displaySuccess() { <!-- Se a mensagem for enviada com sucesso-->
+    displaySuccess() { // Se a mensagem for enviada com sucesso
         this.form.innerHTML = this.settings.success;
         this.form.reset();
     }
 
-    displayError() { <!--Caso ocorra erro no envio da mensagem-->
+    displayError() { // Caso ocorra erro no envio da mensagem
         this.form.innerHTML = this.settings.error;
     }
 
