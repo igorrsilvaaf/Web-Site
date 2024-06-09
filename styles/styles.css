@@ -179,12 +179,12 @@ section {
   height: 100%;
   width: 100%;
   margin-left: 3rem;
-  margin-top: 20rem;
+  margin-top: 8rem;
   transition: all 0.5s ease-in-out;
 }
 .header-content .left-header .image img {
-  width: 500px;
-  height: 500px;
+  width: 440px;
+  height: 440px;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
   filter: grayscale(60%);
@@ -883,6 +883,21 @@ button:disabled {
   padding-left: 0;
 }
 
+  /* Playlist Spotify */
+.spotify {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+  
+.spotify_player{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
 
 @media screen and (max-width: 768px) {
   /* Estilos para o cabeçalho (header) */
@@ -911,15 +926,15 @@ button:disabled {
   }
 
   .header-content .left-header .image {
-    display: block;
+    display: flex;
+    justify-content: left;
+    padding: 1rem;
     margin: 0 auto;
-    height: auto;
-    width: 60%;
   }
 
   .header-content .left-header .image img {
-    max-width: 100%;
-    height: auto;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     filter: grayscale(60%);
   }
@@ -1080,4 +1095,8 @@ button:disabled {
   .btn-new {
     width: 100%;
   }
+
+ .spotify_player{
+  height: auto;
+ }
 }
