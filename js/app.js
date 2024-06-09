@@ -89,3 +89,16 @@ const formSubmit = new FormSubmit({
     error: "<h1 class='error'>Não foi possível enviar a sua mensagem.</h1>",
 });
 formSubmit.init();
+
+// Funçao do botao Play e Pause
+const audioPlayer = document.getElementById('audioPlayer');
+const playButton = document.getElementById('playButton');
+const pauseButton = document.getElementById('pauseButton');
+
+playButton.addEventListener('click', () =>{
+    audioPlayer.play();
+});
+
+pauseButton.addEventListener('click', () =>{
+    audioPlayer.pause();
+});
