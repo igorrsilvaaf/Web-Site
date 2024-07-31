@@ -343,16 +343,16 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .cypress {
-  width: 70%;
-}
-
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .playwright {
   width: 50%;
 }
 
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .appium {
+  width: 30%;
+}
+
 .about-stats .progress-bars .progress-bar .progress-con .progress .k6 {
-  width: 40%;
+  width: 20%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .jira {
@@ -360,7 +360,7 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .jmeter {
-  width: 60%;
+  width: 40%;
 }
 
 
@@ -368,8 +368,8 @@ section {
   width: 70%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .robot {
-  width: 90%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .maestro {
+  width: 40%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .git {
@@ -893,7 +893,7 @@ button:disabled {
   justify-content: center;
   width: 100%;
 }
-  
+
 .spotify_player{
   display: flex;
   justify-content: center;
