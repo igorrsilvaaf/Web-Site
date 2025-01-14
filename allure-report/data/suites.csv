@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1874","E-mail enviado com sucesso","","Mon Jan 13 22:36:17 BRT 2025","passed","Mon Jan 13 22:36:18 BRT 2025","","Enviando email teste","Enviando email teste","E-mail enviado com sucesso"
+"","9460","Formulario enviado com sucesso","","Mon Jan 13 22:36:18 BRT 2025","failed","Mon Jan 13 22:36:28 BRT 2025","","Testa envio de formulario","Testa envio de formulario","Formulario enviado com sucesso"
