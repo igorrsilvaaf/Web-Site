@@ -4,13 +4,15 @@
   "description": "<h2>Personal Website</h2> <img src=\"https://github.com/igorrsilvaaf/MeuPortfolio/blob/master/img/Projeto%20final.png\" />",
   "main": "index.js",
   "type": "module",
-    "engines": {
-        "node": "v20.12.1"
-    },
-    "scripts": {
+  "engines": {
+    "node": "v20.12.1"
+  },
+  "scripts": {
     "cypress:web": "npx cypress open",
     "cypress:headless": "npx cypress run --browser electron",
-     "start": "npx cypress run"
+    "start": "npx cypress run",
+    "browser:chrome": "npx cypress run --browser=electron --headed --spec cypress/e2e/advanced-examples/actions.cy.js --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
   },
   "homepage": "https://github.com/igorrsilvaaf/MeuPortfolio#readme",
   "devDependencies": {
-    "cypress": "^13.8.0"
+    "allure-commandline": "^2.32.0",
+    "cypress": "^13.8.0",
+    "mocha-allure-reporter": "^1.4.0"
   }
 }
